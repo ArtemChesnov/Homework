@@ -1,6 +1,7 @@
 :root {
     --black: #222222;
     --pink: #F1E4E6;
+    --dark-pink: #F16D7F;
 
 }
 
@@ -52,24 +53,6 @@
     margin: 0 41px 0 0;
 }
 
-.header__link {
-    margin: 0 0 0 31px;
-    text-decoration: none;
-    fill: #E8E8E8;
-}
-
-.header__link:hover,
-.header__link:focus {
-    display: inline-block;
-    cursor: pointer;
-    transform: scale(1.3);
-    transition: 0.25s;
-}
-
-.header__link:active {
-    fill: #F16D7F;
-}
-
 .header__menu-btn {
     border: none;
     background-color: transparent;
@@ -96,6 +79,26 @@
     fill: #F16D7F;
 }
 
+
+.header__link {
+    margin: 0 0 0 31px;
+    text-decoration: none;
+    fill: #E8E8E8;
+}
+
+.header__link:hover,
+.header__link:focus {
+    display: inline-block;
+    cursor: pointer;
+    transform: scale(1.3);
+    transition: 0.25s;
+}
+
+.header__link:active {
+    fill: #F16D7F;
+}
+
+
 .brand {
     display: flex;
 }
@@ -108,12 +111,24 @@
     align-items: center;
 }
 
+.brand__title::before {
+    content: " ";
+    width: 12px;
+    height: 92px;
+    background-color: var(--dark-pink);
+    position: absolute;
+    left: -25px;
+    top: 5px;
+}
+
 .brand__title {
     font-size: 48px;
     font-weight: 900;
     line-height: 58px;
     text-transform: uppercase;
+    position: relative;
 }
+
 
 .brand__subtitle {
     display: block;
@@ -216,7 +231,7 @@
     position: relative;
 }
 
-.button__cart {
+.button-cart {
     padding: 12px 15px 12px 50px;
     border: 1px solid #FFFFFF;
     font-size: 14px;
@@ -238,8 +253,6 @@
     align-self: center;
 }
 
-
-
 .cart-wrapper-overlay:before {
     content: '';
     width: 100%;
@@ -253,7 +266,7 @@
     display: none;
 }
 
-.cart:hover .button__cart,
+.cart:hover .button-cart,
 .cart:hover .cart-wrapper-overlay:before {
     display: block;
 }
@@ -434,6 +447,7 @@
     line-height: 17px;
     text-transform: capitalize;
     color: #FFFFFF;
+    cursor: pointer;
 }
 
 .footer {
@@ -467,7 +481,7 @@
     fill: #FFFFFF;
 }
 
-.social__link-icon {
+.item-icon {
     fill: #000000;
 }
 
@@ -478,8 +492,126 @@
     transition: 0.25s;
 }
 
-.footer__social-link:hover .social__link-icon,
-.footer__social-link:focus .social__link-icon {
+.footer__social-link:hover .item-icon,
+.footer__social-link:focus .item-icon {
     fill: #FFFFFF;
     transition: 0.25s;
+}
+
+/* Registration styles */
+
+.registration__wrp {
+    background: #F8F3F4;
+}
+
+.registration__tittle {
+    font-size: 24px;
+    line-height: 29px;
+    color: #F16D7F;
+    text-transform: uppercase;
+    padding: 60px 0 60px 0;
+}
+
+.registration__box {
+    display: flex;
+    justify-content: space-between;
+}
+
+.registration__form {
+    display: flex;
+    flex-direction: column;
+    width: 360px;
+    margin: 64px 0 96px 0;
+}
+
+.registration__form-legend {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    color: #222222;
+    text-transform: capitalize;
+}
+
+.registration__form-input {
+    width: 360px;
+    height: 45px;
+    margin: 20px 0 0 0;
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 16px;
+    color: #B1B1B1;
+    border: 1px solid #A4A4A4;
+    text-transform: capitalize;
+    background: #FFFFFF;
+    padding: 0 0 0 16px;
+}
+
+.radioBtns-box {
+    margin: 31px 0 31px 0;
+    font-weight: 300;
+    font-size: 11px;
+    line-height: 13px;
+    color: #000000;
+    text-transform: capitalize;
+}
+
+.registration__text {
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 16px;
+    color: #B1B1B1;
+    margin: 15px 0 0 0;
+}
+
+.registration__button {
+    font-size: 14px;
+    line-height: 17px;
+    color: #FFFFFF;
+    background: #F16D7F;
+    margin: 39px 0 0 0;
+    border: none;
+    padding: 16px 66px 17px 29px;
+    text-transform: uppercase;
+    background-image: url(img/arrow.svg);
+    background-repeat: no-repeat;
+    background-position: 121px 20px;
+    cursor: pointer;
+}
+
+.loyalty {
+    width: 652px;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 29px;
+    color: #000000;
+    margin: 64px 0 0 0;
+}
+
+.loyalty__heading {
+    text-transform: uppercase;
+}
+
+.loyalty__text {
+    margin: 22px 0 0 0;
+}
+
+.loyalty__list {
+    margin: 22px 0 0 0;
+}
+
+.loyalty__item {
+    margin: 16px 0 0 43px;
+    position: relative;
+}
+
+.loyalty__item::before {
+    content: '';
+    background-image: url(img/check-mark.svg);
+    width: 20px;
+    height: 16px;
+    position: absolute;
+    top: 5px;
+    left: -43px;
+    background-size: 20px 16px;
+
 }
