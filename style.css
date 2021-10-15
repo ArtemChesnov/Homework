@@ -8,7 +8,6 @@
 .page {
     max-width: 1600px;
     margin: 0 auto;
-
     font-family: Lato;
     font-size: 14px;
     font-style: normal;
@@ -39,10 +38,76 @@
 }
 
 .header__nav {
+    position: absolute;
+    top: 75px;
+    right: -230px;
     display: none;
 }
 
+.header__nav-wrp {
+    background-color: #FFFFFF;
+    width: 232px;
+    height: 764px;
+    box-shadow: -5px 5px 30px 0px rgba(0, 0, 0, .2);
+}
+
+.box {
+    width: 100%;
+    height: 100px;
+    display: none;
+}
+
+.display-block {
+    display: block;
+}
+
+.header__nav-title {
+    text-transform: uppercase;
+    padding: 37px 0 0 34px;
+}
+
+.menu-item__title-links {
+    color: #F16D7F;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.menu-item__title-links:hover {
+    color: black;
+}
+
+.nav-links {
+    text-transform: capitalize;
+    color: #6F6E6E;
+    text-decoration: none;
+}
+
+.nav-links:hover {
+    color: #F16D7F;
+}
+
+.header__menu-item:first-child {
+    padding: 24px 0 0 34px;
+}
+
+.header__menu-item:nth-child(2) {
+    padding: 20px 0 0 34px;
+}
+
+.header__menu-item:nth-child(3) {
+    padding: 20px 0 0 34px;
+}
+
+.menu-item__sub-list {
+    padding: 12px 0 0 25px;
+}
+
+.menu-item__sub-item {
+    padding: 11px 0 0 0;
+}
+
 .header__wrp {
+    position: relative;
     display: flex;
     justify-content: space-between;
     min-height: 75px;
@@ -66,8 +131,11 @@
 .header__menu-btn:focus {
     cursor: pointer;
     background: #222222;
-    transform: scale(1.3);
     transition: 0.25s;
+}
+
+.header__menu-btn:hover {
+    transform: scale(1.3);
 }
 
 .header__menu-btn:hover .btn-icon,
@@ -79,7 +147,6 @@
     fill: #F16D7F;
 }
 
-
 .header__link {
     margin: 0 0 0 31px;
     text-decoration: none;
@@ -90,14 +157,16 @@
 .header__link:focus {
     display: inline-block;
     cursor: pointer;
-    transform: scale(1.3);
     transition: 0.25s;
+}
+
+.header__link:hover {
+    transform: scale(1.3);
 }
 
 .header__link:active {
     fill: #F16D7F;
 }
-
 
 .brand {
     display: flex;
@@ -547,12 +616,36 @@
 }
 
 .radioBtns-box {
-    margin: 31px 0 31px 0;
+    margin: 31px 0 31px 26px;
     font-weight: 300;
     font-size: 11px;
     line-height: 13px;
     color: #000000;
     text-transform: capitalize;
+}
+
+.radioBtns-input {
+    display: none;
+}
+
+.radioBtns-label {
+    padding: 0 47px 0 5px;
+    position: relative;
+}
+
+.radioBtns-label::after {
+    position: absolute;
+    content: '';
+    width: 17px;
+    height: 17px;
+    left: -25px;
+    top: -2px;
+    border: 1px solid #A4A4A4;
+    border-radius: 50%;
+}
+
+.radioBtns-input:checked+.radioBtns-label::after {
+    background-color: #F16D7F;
 }
 
 .registration__text {
