@@ -2,7 +2,6 @@
     --black: #222222;
     --pink: #F1E4E6;
     --dark-pink: #F16D7F;
-
 }
 
 .page {
@@ -200,7 +199,6 @@
     position: relative;
 }
 
-
 .brand__subtitle {
     display: block;
     font-size: 32px;
@@ -221,7 +219,6 @@
     justify-content: space-between;
     flex-wrap: wrap;
 }
-
 
 .sales__item {
     display: flex;
@@ -640,7 +637,6 @@
     text-transform: capitalize;
     background: #FFFFFF;
     padding: 0 0 0 16px;
-
 }
 
 .registration__form-input:hover {
@@ -649,7 +645,7 @@
 
 
 .registration__form-input:focus {
-    outline: 2px solid #A4A4A4;
+    outline: 1px solid #A4A4A4;
 }
 
 .radioBtns-box {
@@ -671,6 +667,7 @@
 }
 
 .radioBtns-label::after {
+    cursor: pointer;
     position: absolute;
     content: '';
     width: 17px;
@@ -710,11 +707,14 @@
 
 .registration__button:hover,
 .registration__button:focus {
-    outline: 2px solid #A4A4A4;
+    background-color: rgb(230, 225, 225);
+    box-shadow: 5px 5px 30px 0px rgba(0, 0, 0, .2);
+    outline: 1px solid #A4A4A4;
+    transition: 0.25s;
 }
 
 .registration__button:active {
-    background-color: rgb(230, 225, 225);
+    box-shadow: 5px 5px 30px 0px rgba(0, 0, 0, .4);
 }
 
 .loyalty {
@@ -752,5 +752,4 @@
     top: 5px;
     left: -43px;
     background-size: 20px 16px;
-
 }
