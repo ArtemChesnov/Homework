@@ -369,19 +369,19 @@ table {
   flex-direction: column;
 }
 .sales .sales__item:first-child {
-  background-image: url(bimg/for-man.jpg);
+  background-image: url("../../img/for-woman.jpg");
   margin: 0 0 30px;
 }
 .sales .sales__item:nth-child(2) {
-  background-image: url(bimg/for-woman.jpg);
+  background-image: url(../../img/for-man.jpg);
   margin: 0 0 30px;
 }
 .sales .sales__item:nth-child(3) {
-  background-image: url(bimg/for-kids.jpg);
+  background-image: url("../../img/for-kids.jpg");
   margin: 0 0 30px;
 }
 .sales .sales__item:last-child {
-  background-image: url(bimg/accesories.jpg);
+  background-image: url("../../img/accesories.jpg");
   width: 100%;
 }
 .sales .sales__text {
@@ -440,7 +440,7 @@ table {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-image: url(bimg/basket.svg);
+  background-image: url(../../img/basket.svg);
   background-repeat: no-repeat;
   background-position: 13px 8px;
   background-size: 26px 24px;
@@ -567,21 +567,23 @@ table {
 }
 
 .subscription {
-  background-image: url("bimg/subscription.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
+  background-image: url(../../img/subscription.jpg) center no-repeat;
 }
-.subscription .subscription__list {
+
+.subscription__list {
   display: flex;
   text-align: center;
 }
-.subscription .subscription__item {
+
+.subscription__item {
   margin: 0 327px 0 0;
 }
-.subscription .subscription__img {
+
+.subscription__img {
   padding: 86px 0 32px 0;
 }
-.subscription .subscription__text {
+
+.subscription__text {
   padding: 0 0 126px 0;
   font-size: 20px;
   font-weight: 400;
@@ -589,10 +591,12 @@ table {
   width: 360px;
   color: #222224;
 }
-.subscription .subscription__text-span {
+
+.subscription__text-span {
   font-style: italic;
 }
-.subscription .subscription__item-title {
+
+.subscription__item-title {
   padding: 150px 0 0 0;
   font-size: 24px;
   font-weight: 700;
@@ -600,7 +604,8 @@ table {
   color: #222224;
   text-transform: uppercase;
 }
-.subscription .subscription__subtitle {
+
+.subscription__subtitle {
   margin: 0 0 32px 0;
   font-size: 18px;
   font-weight: 400;
@@ -608,11 +613,13 @@ table {
   color: #222224;
   text-transform: uppercase;
 }
-.subscription .subscription__form {
+
+.subscription__form {
   position: relative;
   margin: 0 97px 0 0;
 }
-.subscription .subscription__form-input {
+
+.subscription__form-input {
   width: 256px;
   height: 49px;
   background: #E1E1E1;
@@ -626,13 +633,16 @@ table {
   opacity: 0.67;
   outline: none;
 }
-.subscription .subscription__form-input:hover {
+
+.subscription__form-input:hover {
   box-shadow: -5px 5px 30px 0px rgba(0, 0, 0, 0.2);
 }
-.subscription .subscription__form-input:focus {
+
+.subscription__form-input:focus {
   box-shadow: -5px 5px 30px 0px rgba(0, 0, 0, 0.4);
 }
-.subscription .subscription__form-btn {
+
+.subscription__form-btn {
   position: absolute;
   padding: 17px 19px;
   border-radius: 0 20px 20px 0;
@@ -645,13 +655,15 @@ table {
   cursor: pointer;
   outline: none;
 }
-.subscription .subscription__form-btn:hover,
-.subscription .subscription__form-btn:focus {
+
+.subscription__form-btn:hover,
+.subscription__form-btn:focus {
   background-color: #e6e1e1;
   box-shadow: 5px 5px 30px 0px rgba(0, 0, 0, 0.2);
   transition: 0.25s;
 }
-.subscription .subscription__form-btn:active {
+
+.subscription__form-btn:active {
   box-shadow: 5px 5px 30px 0px rgba(0, 0, 0, 0.4);
 }
 
@@ -785,7 +797,7 @@ table {
   border: none;
   padding: 16px 66px 17px 29px;
   text-transform: uppercase;
-  background-image: url(bimg/arrow.svg);
+  background-image: url("../../img/arrow.svg");
   background-repeat: no-repeat;
   background-position: 121px 20px;
   cursor: pointer;
@@ -824,7 +836,7 @@ table {
 }
 .loyalty .loyalty__item::before {
   content: "";
-  background-image: url(img/check-mark.svg);
+  background-image: url("../../img/check-mark.svg");
   width: 20px;
   height: 16px;
   position: absolute;
