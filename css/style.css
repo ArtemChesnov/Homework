@@ -369,19 +369,19 @@ table {
   flex-direction: column;
 }
 .sales .sales__item:first-child {
-  background-image: url("../../img/for-woman.jpg");
+  background-image: url(../img/for-woman.jpg);
   margin: 0 0 30px;
 }
 .sales .sales__item:nth-child(2) {
-  background-image: url(../../img/for-man.jpg);
+  background-image: url(../img/for-man.jpg);
   margin: 0 0 30px;
 }
 .sales .sales__item:nth-child(3) {
-  background-image: url("../../img/for-kids.jpg");
+  background-image: url(../img/for-kids.jpg);
   margin: 0 0 30px;
 }
 .sales .sales__item:last-child {
-  background-image: url("../../img/accesories.jpg");
+  background-image: url(../img/accesories.jpg);
   width: 100%;
 }
 .sales .sales__text {
@@ -440,7 +440,7 @@ table {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-image: url(../../img/basket.svg);
+  background-image: url(../img/basket.svg);
   background-repeat: no-repeat;
   background-position: 13px 8px;
   background-size: 26px 24px;
@@ -567,7 +567,9 @@ table {
 }
 
 .subscription {
-  background-image: url(../../img/subscription.jpg) center no-repeat;
+  background-image: url(../img/subscription.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .subscription__list {
@@ -797,7 +799,7 @@ table {
   border: none;
   padding: 16px 66px 17px 29px;
   text-transform: uppercase;
-  background-image: url("../../img/arrow.svg");
+  background-image: url(../img/arrow.svg);
   background-repeat: no-repeat;
   background-position: 121px 20px;
   cursor: pointer;
@@ -836,7 +838,7 @@ table {
 }
 .loyalty .loyalty__item::before {
   content: "";
-  background-image: url("../../img/check-mark.svg");
+  background-image: url(../img/check-mark.svg);
   width: 20px;
   height: 16px;
   position: absolute;

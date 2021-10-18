@@ -20,22 +20,22 @@
     }
 
     .sales__item:first-child {
-        background-image: url('../../img/for-woman.jpg');
+        background-image: url(../img/for-woman.jpg);
         margin: 0 0 30px;
     }
 
     .sales__item:nth-child(2) {
-        background-image: url(../../img/for-man.jpg);
+        background-image: url(../img/for-man.jpg);
         margin: 0 0 30px;
     }
 
     .sales__item:nth-child(3) {
-        background-image: url('../../img/for-kids.jpg');
+        background-image: url(../img/for-kids.jpg);
         margin: 0 0 30px;
     }
 
     .sales__item:last-child {
-        background-image: url('../../img/accesories.jpg');
+        background-image: url(../img/accesories.jpg);
         width: 100%;
     }
 

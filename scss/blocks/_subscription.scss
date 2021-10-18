@@ -1,5 +1,7 @@
 .subscription {
-    background-image: url(../../img/subscription.jpg) center no-repeat;
+    background-image: url(../img/subscription.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .subscription__list {
@@ -80,7 +82,7 @@
     position: absolute;
     padding: 17px 19px;
     border-radius: 0 20px 20px 0;
-    background: #F16D7F;
+    background: $dark-pink;
     border: none;
     font-size: 14px;
     line-height: 17px;
