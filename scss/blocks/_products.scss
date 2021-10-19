@@ -104,11 +104,12 @@
     }
 
     .products__button {
+        border: none;
         @include font(16px, 400, 19px);
         color: $dark-pink;
         text-transform: capitalize;
         background: $just-white;
-        border: 1px solid #FF6A6A;
+        outline: 1px solid #FF6A6A;
         padding: 14px 38px;
         margin: 48px 0 96px 0;
         transition: 0.25s;
@@ -118,7 +119,7 @@
     .products__button:hover {
         color: $just-white;
         background: $dark-pink;
-        border: 1px solid #FF6A6A;
+        outline: 1px solid #FF6A6A;
         transition: 0.2s;
         box-shadow: 5px 5px 30px 0px rgba(0, 0, 0, .3);
     }
@@ -131,7 +132,7 @@
     .products__button:active {
         color: $just-white;
         background: $dark-pink;
-        border: 1px solid #FF6A6A;
+        outline: 1px solid #FF6A6A;
         transition: 0.2s;
         box-shadow: 5px 5px 30px 0px rgba(0, 0, 0, .6);
     }
