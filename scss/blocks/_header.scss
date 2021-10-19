@@ -6,15 +6,13 @@
         top: 75px;
         right: -230px;
         display: none;
-
     }
 
     .header__nav-wrp {
-        background-color: #ffffff;
+        background-color: $just-white;
         width: 232px;
         height: 764px;
         box-shadow: -5px 5px 30px 0px rgba(0, 0, 0, 0.2);
-
     }
 
     .display-block {

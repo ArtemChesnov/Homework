@@ -40,16 +40,12 @@
     }
 
     .sales__text {
-        font-size: 16px;
-        font-weight: 400;
-        line-height: 19px;
-        color: #FFFFFF;
+        @include font(16px, 400, 19px);
+        color: $just-white;
     }
 
     .sales__item-title {
-        font-size: 24px;
-        font-weight: 700;
-        line-height: 29px;
+        @include font(24px, 700, 29px);
         color: $dark-pink;
     }
 }
