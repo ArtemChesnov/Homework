@@ -504,6 +504,7 @@ table {
   padding: 25px 28px 20px 16px;
 }
 .products .products__button {
+  border: none;
   font-size: 16px;
   font-weight: 400;
   line-height: 19px;
@@ -511,7 +512,7 @@ table {
   color: #F16D7F;
   text-transform: capitalize;
   background: #FFFFFF;
-  border: 1px solid #FF6A6A;
+  outline: 1px solid #FF6A6A;
   padding: 14px 38px;
   margin: 48px 0 96px 0;
   transition: 0.25s;
@@ -520,7 +521,7 @@ table {
 .products .products__button:hover {
   color: #FFFFFF;
   background: #F16D7F;
-  border: 1px solid #FF6A6A;
+  outline: 1px solid #FF6A6A;
   transition: 0.2s;
   box-shadow: 5px 5px 30px 0px rgba(0, 0, 0, 0.3);
 }
@@ -531,7 +532,7 @@ table {
 .products .products__button:active {
   color: #FFFFFF;
   background: #F16D7F;
-  border: 1px solid #FF6A6A;
+  outline: 1px solid #FF6A6A;
   transition: 0.2s;
   box-shadow: 5px 5px 30px 0px rgba(0, 0, 0, 0.6);
 }
@@ -626,6 +627,7 @@ table {
   border: none;
   border-radius: 20px 0 0 20px;
   padding-left: 22px;
+  font-family: inherit;
   font-size: 14px;
   font-weight: 400;
   line-height: 17px;
@@ -740,6 +742,7 @@ table {
   width: 344px;
   height: 45px;
   margin: 20px 0 0 0;
+  font-family: inherit;
   font-size: 13px;
   font-weight: 300;
   line-height: 16px;
@@ -980,6 +983,7 @@ table {
   width: 344px;
   height: 45px;
   margin: 20px 0 0 0;
+  font-family: inherit;
   font-size: 13px;
   font-weight: 300;
   line-height: 16px;

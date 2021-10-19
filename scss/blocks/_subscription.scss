@@ -54,6 +54,7 @@
         border: none;
         border-radius: 20px 0 0 20px;
         padding-left: 22px;
+        font-family: inherit;
         @include font(14px, 400, 17px);
         text-transform: capitalize;
         color: #222224;
