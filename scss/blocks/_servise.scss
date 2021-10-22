@@ -1,0 +1,32 @@
+.servise {
+    background-color: $black;
+    .servise__list {
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+        padding: 104px 0 0 0;
+    }
+
+    .servise__item {
+        display: block;
+        width: 27%;
+    }
+
+    .servise__img {
+        margin: 0 0 19px 0;
+    }
+
+    .servise__item-title {
+        margin: 0 0 16px 0;
+        @include font(20px, 400, 24px);
+        text-transform: capitalize;
+        color: #FBFBFB;
+    }
+
+    .servise__text {
+        margin: 0 0 104px 0;
+        @include font(14px,300,17px);
+        color: #FBFBFB;
+    }
+}
+

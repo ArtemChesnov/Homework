@@ -1,0 +1,13 @@
+.shopping {
+
+    .shopping__wrp {
+        background: $pink-white;
+    }
+
+    .shopping__tittle {
+        @include font(24px, 400, 29px);
+        color: $dark-pink;
+        text-transform: uppercase;
+        padding: 60px 0 60px 0;
+    }
+}

@@ -1,0 +1,47 @@
+.menu-item__title-links {
+    color: $dark-pink;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.menu-item__title-links:hover {
+    color: $black;
+}
+
+.menu-item__title-links:focus {
+    outline: 2px solid $outline-color;
+}
+
+.nav-links {
+    text-transform: capitalize;
+    color: #6F6E6E;
+    text-decoration: none;
+}
+
+.nav-links:hover {
+    color: $dark-pink;
+}
+
+.nav-links:focus {
+    outline: 2px solid $outline-color;
+}
+
+.menu-item:first-child {
+    padding: 24px 0 0 34px;
+}
+
+.menu-item:nth-child(2) {
+    padding: 20px 0 0 34px;
+}
+
+.menu-item:nth-child(3) {
+    padding: 20px 0 0 34px;
+}
+
+.menu-item__sub-list {
+    padding: 12px 0 0 25px;
+}
+
+.menu-item__sub-item {
+    padding: 11px 0 0 0;
+}

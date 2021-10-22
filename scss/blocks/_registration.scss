@@ -1,0 +1,116 @@
+.registration {
+    .registration__wrp {
+        background: $pink-white;
+    }
+
+    .registration__tittle {
+        @include font(24px, 400, 29px);
+        color: $dark-pink;
+        text-transform: uppercase;
+        padding: 60px 0 60px 0;
+    }
+
+    .registration__box {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .registration__form {
+        display: flex;
+        flex-direction: column;
+        width: 360px;
+        margin: 64px 0 96px 0;
+    }
+
+    .registration__form-legend {
+        @include font(16px, 300, 19px);
+        color: $black;
+        text-transform: capitalize;
+    }
+
+    .registration__form-input {
+        width: 344px;
+        height: 45px;
+        margin: 20px 0 0 0;
+        font-family: inherit;
+        @include font(13px, 300, 16px);
+        color: #B1B1B1;
+        border: 1px solid $outline-color;
+        text-transform: capitalize;
+        background: $just-white;
+        padding: 0 0 0 16px;
+    }
+
+    .registration__form-input:hover {
+        outline: 1px solid $outline-color;
+    }
+
+
+    .registration__form-input:focus {
+        outline: 1px solid $outline-color;
+    }
+
+    .radioBtns-box {
+        margin: 31px 0 31px 26px;
+        @include font(11px, 300, 13px);
+        color: #000000;
+        text-transform: capitalize;
+    }
+
+    .radioBtns-input {
+        display: none;
+    }
+
+    .radioBtns-label {
+        padding: 0 47px 0 5px;
+        position: relative;
+    }
+
+    .radioBtns-label::after {
+        cursor: pointer;
+        position: absolute;
+        content: '';
+        width: 17px;
+        height: 17px;
+        left: -25px;
+        top: -2px;
+        border: 1px solid $outline-color;
+        border-radius: 50%;
+    }
+
+    .radioBtns-input:checked+.radioBtns-label::after {
+        background-color: $dark-pink;
+    }
+
+    .registration__text {
+        @include font(13px, 300, 16px);
+        color: #B1B1B1;
+        margin: 15px 0 0 0;
+    }
+
+    .registration__button {
+        @include font(default);
+        color: $just-white;
+        background: $dark-pink;
+        margin: 39px 0 0 0;
+        border: none;
+        padding: 16px 66px 17px 29px;
+        text-transform: uppercase;
+        background-image: url(../img/arrow.svg);
+        background-repeat: no-repeat;
+        background-position: 121px 20px;
+        cursor: pointer;
+    }
+
+    .registration__button:hover,
+    .registration__button:focus {
+        background-color: rgb(230, 225, 225);
+        box-shadow: 5px 5px 30px 0px rgba(0, 0, 0, .2);
+        outline: 1px solid $outline-color;
+        transition: 0.25s;
+    }
+
+    .registration__button:active {
+        box-shadow: 5px 5px 30px 0px rgba(0, 0, 0, .4);
+    }
+}
