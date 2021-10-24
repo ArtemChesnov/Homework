@@ -10,19 +10,19 @@
     &__item {
         display: flex;
         justify-content: center;
-        min-width: 31%;
+        width: 31%;
         min-height: 260px;
         text-align: center;
         text-transform: uppercase;
         flex-direction: column;
 
         @include tablet {
-            min-width: 32%;
+            width: 32%;
             min-height: 168px;
         }
 
         @include mobile {
-            min-width: 100%;
+            width: 100%;
             min-height: 247px;
         }
 
