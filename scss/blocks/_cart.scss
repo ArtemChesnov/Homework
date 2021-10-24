@@ -1,3 +1,9 @@
+@media (max-width:1599px) {
+    .shopping-box {
+        align-items: center;
+    }
+}
+
 .shopping-box {
     display: flex;
     justify-content: space-between;
@@ -8,15 +14,15 @@
 
     .cart {
         margin: 0 0 128px 0;
-        width: 57.2%;
+        width: 652px;
 
         @include tablet {
-            width: 99.7%;
+            width: 734px;
             margin: 0 0 64px 0;
         }
 
         @include mobile {
-            width: 100%;
+            width: 358px;
             margin: 0 0 48px 0;
         }
 
@@ -109,12 +115,10 @@
 
                 @include tablet {
                     width: 35.7%;
-                    height: auto;
                 }
 
                 @include mobile {
                     width: 40%;
-                    height: auto;
                 }
             }
 

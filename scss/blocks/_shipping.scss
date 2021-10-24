@@ -18,12 +18,13 @@
 
         &-container {
             @include tablet {
-                justify-content: space-between;
+                justify-content: space-evenly;
                 display: flex;
             }
 
             @include mobile {
                 flex-direction: column;
+                align-items: center;
             }
         }
 
@@ -92,16 +93,8 @@
         }
     }
 
-
-
-
-
-
-
-
-
     &__checkout {
-        width: 100%;
+        width: 360px;
         height: 214px;
         margin: 58px 0 0 0;
         text-align: right;
@@ -109,11 +102,9 @@
 
         @include tablet {
             margin: 36px 0 0 0;
-            width: 48.9%;
         }
 
         @include mobile {
-            width: 100%;
             margin: 48px 0 0 0;
         }
 
