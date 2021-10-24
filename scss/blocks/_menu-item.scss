@@ -4,26 +4,18 @@
     text-decoration: none;
 }
 
-.menu-item__title-links:hover {
-    color: $black;
-}
-
-.menu-item__title-links:focus {
-    outline: 2px solid $outline-color;
-}
-
 .nav-links {
     text-transform: capitalize;
     color: #6F6E6E;
     text-decoration: none;
-}
 
-.nav-links:hover {
-    color: $dark-pink;
-}
+    &:hover {
+        color: $dark-pink;
+    }
 
-.nav-links:focus {
-    outline: 2px solid $outline-color;
+    &:focus {
+        outline: 2px solid $outline-color;
+    }
 }
 
 .menu-item:first-child {

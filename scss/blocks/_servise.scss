@@ -1,32 +1,54 @@
 .servise {
     background-color: $black;
-    .servise__list {
+
+    &__list {
         display: flex;
         justify-content: space-between;
         text-align: center;
-        padding: 104px 0 0 0;
+        padding: 104px 0 104px 0;
+
+        @include tablet {
+            flex-direction: column;
+            align-items: center;
+            padding: 48px 0 64px 0;
+        }
+
+        @include mobile {
+            padding: 48px 0 81px 0;
+        }
     }
 
-    .servise__item {
+    &__item {
         display: block;
         width: 27%;
+
+        @include tablet {
+            width: 42%;
+
+            &:first-child,
+            &:nth-child(2) {
+                margin: 0 0 48px 0;
+            }
+        }
+
+        @include mobile {
+            width: 91%;
+        }
+
+        &-title {
+            margin: 0 0 16px 0;
+            @include font(20px, 400, 24px);
+            text-transform: capitalize;
+            color: #FBFBFB;
+        }
     }
 
-    .servise__img {
-        margin: 0 0 19px 0;
+    &__img {
+        margin: 0 0 20px 0;
     }
 
-    .servise__item-title {
-        margin: 0 0 16px 0;
-        @include font(20px, 400, 24px);
-        text-transform: capitalize;
-        color: #FBFBFB;
-    }
-
-    .servise__text {
-        margin: 0 0 104px 0;
-        @include font(14px,300,17px);
+    &__text {
+        @include font(14px, 300, 17px);
         color: #FBFBFB;
     }
 }
-

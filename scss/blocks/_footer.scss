@@ -1,44 +1,67 @@
 .footer {
     background-color: $black;
 
-    .footer__wrp {
+    &__wrp {
         display: flex;
         justify-content: space-between;
         align-items: center;
         min-height: 79px;
+
+        @include mobile {
+            flex-direction: column-reverse;
+            text-align: center;
+        }
+
     }
 
-    .footer__copy-title {
+    &__copy-title {
         @include font(16px, 400, 19px);
         color: #FBFBFB;
+        text-transform: capitalize;
+
+        @include tablet {
+            padding: 0 0 0 16px;
+        }
+
+        @include mobile {
+            padding: 0 0 9px 0;
+        }
     }
 
-    .footer__socials-list {
+    &__socials-list {
         display: flex;
+
+        @include tablet {
+            padding: 0 16px 0 0;
+        }
+
+        @include mobile {
+            padding: 43px 0 40px 0;
+        }
     }
 
-    .footer__social-item {
+    &__social-item {
         margin: 0 0 0 7px;
     }
 
-    .footer__social-link {
+    &__social-link {
         fill: $just-white;
-    }
 
-    .item-icon {
-        fill: #000000;
-    }
+        &:hover,
+        &:focus {
+            cursor: pointer;
+            fill: $dark-pink;
+            transition: 0.25s;
+        }
 
-    .footer__social-link:hover,
-    .footer__social-link:focus {
-        cursor: pointer;
-        fill: $dark-pink;
-        transition: 0.25s;
+        &:hover .item-icon,
+        &:focus .item-icon {
+            fill: $just-white;
+            transition: 0.25s;
+        }
     }
+}
 
-    .footer__social-link:hover .item-icon,
-    .footer__social-link:focus .item-icon {
-        fill: $just-white;
-        transition: 0.25s;
-    }
+.item-icon {
+    fill: #000000;
 }
