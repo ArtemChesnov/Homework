@@ -67,6 +67,73 @@
             }
         }
 
+        &__form {
+            @include font(22px, 400, 26px);
+            color: #575757;
+            margin: 0 0 6px 0;
+            text-transform: capitalize;
+
+            @include mobile {
+                @include font(14px, 400, 17px);
+                margin: 0;
+            }
+
+            &-input {
+                border: none;
+                @include font(22px, 400, 26px);
+                color: #575757;
+                text-transform: capitalize;
+                outline: 1px solid #EAEAEA;
+                width: 43px;
+                height: 24px;
+                font-family: inherit;
+                text-align: center;
+                margin: 0 0 0 16px;
+
+                &:hover {
+                    outline: 2px solid $outline-color;
+
+                    &:hover::-webkit-input-placeholder {
+                        opacity: 0.7;
+                    }
+
+                    &:hover::-moz-placeholder {
+                        opacity: 0.7;
+                    }
+
+                    &:hover:-moz-placeholder {
+                        opacity: 0.7;
+                    }
+
+                    &:hover:-ms-input-placeholder {
+                        opacity: 0.7;
+                    }
+                }
+
+                &:focus {
+                    outline: 2px solid $outline-color;
+                    filter: drop-shadow(10px 15px 20px rgba(0, 0, 0, 0.29));
+
+                }
+
+                &:focus::-webkit-input-placeholder {
+                    color: transparent;
+                }
+
+                &:focus::-moz-placeholder {
+                    color: transparent;
+                }
+
+                &:focus:-moz-placeholder {
+                    color: transparent;
+                }
+
+                &:focus:-ms-input-placeholder {
+                    color: transparent;
+                }
+            }
+        }
+
         &__list {
             margin: 96px 0 72px 0;
 
