@@ -1,27 +1,38 @@
 .loyalty {
-    width: 652px;
+    width: 57.2%;
     @include font(24px, 300, 29px);
     color: #000000;
     margin: 64px 0 0 0;
 
-    .loyalty__heading {
+    @include tablet {
+        width: 48%;
+        margin: 40px 0 0 0;
+        @include font(16px, 300, 19px);
+    }
+
+    @include mobile {
+        width: 100%;
+        margin: 0 0 100px 0;
+    }
+
+    &__heading {
         text-transform: uppercase;
     }
 
-    .loyalty__text {
+    &__text {
         margin: 22px 0 0 0;
     }
 
-    .loyalty__list {
+    &__list {
         margin: 22px 0 0 0;
     }
 
-    .loyalty__item {
+    &__item {
         margin: 16px 0 0 43px;
         position: relative;
     }
 
-    .loyalty__item::before {
+    &__item::before {
         content: '';
         background-image: url(../img/check-mark.svg);
         width: 20px;

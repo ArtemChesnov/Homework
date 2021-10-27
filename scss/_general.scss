@@ -8,6 +8,14 @@
 .container {
     max-width: 1140px;
     margin: 0 auto;
+
+    @include tablet {
+        width: $tablet-width;
+    }
+
+    @include mobile {
+        width: $mobile-width;
+    }
 }
 
 .visually-hidden {
@@ -21,4 +29,16 @@
     clip: rect(0 0 0 0);
     clip-path: inset(50%);
     margin: -1px;
+}
+
+@media (max-width: 1599px) {
+    .container {
+        width: 96%;
+    }
+}
+
+@media (max-width:768px) {
+    .container {
+        width: 95.2%;
+    }
 }

@@ -1,70 +1,75 @@
 .brand {
     display: flex;
 
-    .brand__wrp {
+    &__img {
+        width: 50%;
+
+        @include tablet {
+            height: auto;
+        }
+
+        @include mobile {
+            display: none;
+        }
+    }
+
+    &__wrp {
         background-color: $pink;
         flex-grow: 1;
         padding: 0 0 0 92px;
         display: flex;
         align-items: center;
+
+        @include tablet {
+            padding: 0 0 0 67px;
+        }
+
+        @include mobile {
+            min-height: 363px;
+            padding: 0 0 0 83px;
+        }
     }
 
-    .brand__title::before {
-        content: " ";
-        width: 12px;
-        height: 92px;
-        background-color: $dark-pink;
-        position: absolute;
-        left: -25px;
-        top: 5px;
-    }
-
-    .brand__title {
+    &__title {
         font-family: $font-lato;
-        @include font(48px, 300, 58px);
-        text-transform: uppercase;
-        position: relative;
-    }
-
-    .brand__subtitle {
-        display: block;
-        @include font(32px, 700, 38px);
-    }
-
-    .brand__subtitle-pink {
-        color: $dark-pink;
-    }
-
-    .brand__wrp {
-        background-color: $pink;
-        flex-grow: 1;
-        padding: 0 0 0 92px;
-        display: flex;
-        align-items: center;
-    }
-
-    .brand__title::before {
-        content: " ";
-        width: 12px;
-        height: 92px;
-        background-color: $dark-pink;
-        position: absolute;
-        left: -25px;
-        top: 5px;
-    }
-
-    .brand__title {
         @include font(48px, 900, 58px);
         text-transform: uppercase;
         position: relative;
+
+        &::before {
+            content: " ";
+            width: 12px;
+            height: 100%;
+            background-color: $dark-pink;
+            position: absolute;
+            left: -25px;
+            top: 5px;
+        }
+
+        @include tablet {
+            @include font(44px, 900, 52px);
+        }
+
+        @include mobile {
+            @include font(38px, 900, 46px);
+        }
     }
 
-    .brand__subtitle {
+    &__subtitle {
+
         display: block;
-        @include font(32px, 700, 38px);
-    }
+        @include font(37px, 700, 44px);
 
-    .brand__subtitle-pink {
-        color: $dark-pink;
+        @include tablet {
+            @include font(24px, 700, 29px);
+        }
+
+        @include mobile {
+            @include font(20px, 700, 24px);
+        }
+
+        &-pink {
+            color: $dark-pink;
+        }
     }
 }

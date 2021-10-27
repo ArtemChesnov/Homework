@@ -1,139 +1,169 @@
-.shopping-box {
-    display: flex;
-    justify-content: space-between;
+.shipping {
+    width: 31.5%;
 
-    .shipping__form {
+    @include tablet {
+        width: 100%;
+    }
+
+    &__form {
         margin: 113px 0 0 0;
+
+        @include tablet {
+            margin: 0 0 128px 0;
+        }
+
+        @include mobile {
+            margin: 0 0 96px 0;
+        }
+
+        &-container {
+            @include tablet {
+                justify-content: space-evenly;
+                display: flex;
+            }
+
+            @include mobile {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+
+        &-legend {
+            @include font(16px, 300, 19px);
+            color: $black;
+            text-transform: uppercase;
+        }
+
+        &-input {
+            border: none;
+            width: 344px;
+            height: 45px;
+            margin: 20px 0 0 0;
+            font-family: inherit;
+            @include font(13px, 300, 16px);
+            color: #B1B1B1;
+            outline: 1px solid $outline-color;
+            text-transform: capitalize;
+            background: $just-white;
+            padding: 0 0 0 16px;
+
+            &:hover {
+                outline: 2px solid $outline-color;
+            }
+
+            &:focus {
+                outline: 2px solid $outline-color;
+                filter: drop-shadow(10px 15px 20px rgba(0, 0, 0, 0.09));
+            }
+        }
+
+        &-btn {
+            border: none;
+            margin: 24px 0 0 0;
+            @include font(11px, 300, 13px);
+            background: $just-white;
+            padding: 10px 14px 10px 14px;
+            outline: 1px solid #A4A4A4;
+            color: #4A4A4A;
+            cursor: pointer;
+            text-transform: uppercase;
+
+            &:hover {
+                border: none;
+                color: $just-white;
+                background: $dark-pink;
+                outline: 1px solid #FF6A6A;
+                transition: 0.2s;
+                box-shadow: 5px 5px 30px 0px rgba(0, 0, 0, .3);
+            }
+
+            &:focus {
+                border: none;
+                outline: 2px solid $outline-color;
+            }
+
+            &:active {
+                border: none;
+                color: $just-white;
+                background: $dark-pink;
+                outline: 1px solid #FF6A6A;
+                transition: 0.2s;
+                box-shadow: 5px 5px 30px 0px rgba(0, 0, 0, .6);
+            }
+        }
     }
 
-    .shipping__form-legend {
-        @include font(16px, 300, 19px);
-        color: $black;
-        text-transform: uppercase;
-    }
-
-    .shipping__form-input {
-        border: none;
-        width: 344px;
-        height: 45px;
-        margin: 20px 0 0 0;
-        font-family: inherit;
-        @include font(13px, 300, 16px);
-        color: #B1B1B1;
-        outline: 1px solid $outline-color;
-        text-transform: capitalize;
-        background: $just-white;
-        padding: 0 0 0 16px;
-    }
-
-    .shipping__form-input:hover {
-        outline: 2px solid $outline-color;
-    }
-
-    .shipping__form-input:focus {
-        outline: 2px solid $outline-color;
-        filter: drop-shadow(10px 15px 20px rgba(0, 0, 0, 0.09));
-    }
-
-    .shipping__form-btn {
-        border: none;
-        margin: 24px 0 0 0;
-        @include font(11px, 300, 13px);
-        background: $just-white;
-        padding: 10px 14px 10px 14px;
-        outline: 1px solid #A4A4A4;
-        color: #4A4A4A;
-        cursor: pointer;
-        text-transform: uppercase;
-    }
-
-    .shipping__form-btn:hover {
-        border: none;
-        color: $just-white;
-        background: $dark-pink;
-        outline: 1px solid #FF6A6A;
-        transition: 0.2s;
-        box-shadow: 5px 5px 30px 0px rgba(0, 0, 0, .3);
-    }
-
-    .shipping__form-btn:focus {
-        border: none;
-        outline: 2px solid $outline-color;
-    }
-
-    .shipping__form-btn:active {
-        border: none;
-        color: $just-white;
-        background: $dark-pink;
-        outline: 1px solid #FF6A6A;
-        transition: 0.2s;
-        box-shadow: 5px 5px 30px 0px rgba(0, 0, 0, .6);
-    }
-
-    .shipping__checkout {
+    &__checkout {
         width: 360px;
         height: 214px;
         margin: 58px 0 0 0;
         text-align: right;
         background: #F5F3F3;
-    }
 
-    .shipping__checkout-text {
-        @include font(11px, 400, 13px);
-        color: #4A4A4A;
-        padding: 39px 34px 12px 0;
-        text-transform: uppercase;
+        @include tablet {
+            margin: 36px 0 0 0;
+        }
+
+        @include mobile {
+            margin: 48px 0 0 0;
+        }
+
+        &-text {
+            @include font(11px, 400, 13px);
+            color: #4A4A4A;
+            padding: 39px 34px 12px 0;
+            text-transform: uppercase;
+        }
+
+        &-heading {
+            @include font(16px, 300, 19px);
+            color: $black;
+            padding: 0 37px 39px 0;
+            text-transform: uppercase;
+            position: relative;
+
+            &::before {
+                content: '';
+                position: absolute;
+                background: #E2E2E2;
+                width: 275px;
+                height: 1px;
+                left: 42px;
+                top: 40px;
+            }
+        }
+
+        &-button {
+            color: $just-white;
+            @include font(16px, 300, 19px);
+            padding: 15px 42px 15px 42px;
+            border: none;
+            background: $dark-pink;
+            text-transform: uppercase;
+            margin: 0 43px 0 0;
+            cursor: pointer;
+
+            &:hover,
+            &:focus {
+                background-color: rgb(230, 225, 225);
+                box-shadow: 5px 5px 30px 0px rgba(0, 0, 0, .2);
+                outline: 1px solid $outline-color;
+                transition: 0.25s;
+            }
+
+            &:active {
+                color: $black;
+                box-shadow: 5px 5px 30px 0px rgba(0, 0, 0, .4);
+            }
+        }
     }
 
     .checkout-span {
         margin: 0 0 0 14px;
     }
 
-    .shipping__checkout-heading {
-        @include font(16px, 300, 19px);
-        color: $black;
-        padding: 0 37px 39px 0;
-        text-transform: uppercase;
-        position: relative;
-    }
-
     .heading-pink {
         color: $dark-pink;
         margin: 0 0 0 14px;
     }
-
-    .shipping__checkout-heading::before {
-        content: '';
-        position: absolute;
-        background: #E2E2E2;
-        width: 275px;
-        height: 1px;
-        left: 42px;
-        top: 40px;
-    }
-
-    .shipping__checkout-button {
-        color: $just-white;
-        @include font(16px, 300, 19px);
-        padding: 15px 42px 15px 42px;
-        border: none;
-        background: $dark-pink;
-        text-transform: uppercase;
-        margin: 0 43px 0 0;
-        cursor: pointer;
-    }
-
-    .shipping__checkout-button:hover,
-    .shipping__checkout-button:focus {
-        background-color: rgb(230, 225, 225);
-        box-shadow: 5px 5px 30px 0px rgba(0, 0, 0, .2);
-        outline: 1px solid $outline-color;
-        transition: 0.25s;
-    }
-
-    .shipping__checkout-button:active {
-        color: $black;
-        box-shadow: 5px 5px 30px 0px rgba(0, 0, 0, .4);
-    }
-
 }

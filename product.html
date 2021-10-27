@@ -8,11 +8,10 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
-    <title>Registration</title>
+    <title>Product</title>
 </head>
 
-<body class="page">
+<body>
     <header class="header">
         <div class="container header__wrp">
             <div class="header__wrp-logs">
@@ -75,77 +74,20 @@
             </nav>
         </div>
     </header>
+
     <main>
-        <section class="registration">
-            <div class="registration__wrp">
-                <div class="container">
-                    <h1 class="registration__tittle">registration</h1>
-                </div>
-            </div>
-            <div class="registration__box container">
-                <div class="registration__form">
-                    <form>
-                        <fieldset>
-                            <legend class="registration__form-legend">yor name</legend>
-                            <div class="firstName-box">
-                                <label>
-                                    <input class="registration__form-input" type="text" placeholder="first name"
-                                        required>
-                                    <span class="visually-hidden">first name</span>
-                                </label>
-                            </div>
-                            <div class="lastName-box">
-                                <label>
-                                    <input class="registration__form-input" type="text" placeholder="last name"
-                                        required>
-                                    <span class="visually-hidden">last name</span>
-                                </label>
-                            </div>
-                        </fieldset>
-                        <div class="radioBtns-box">
-                            <input class="radioBtns-input" type="radio" name="gender" value="male" id="genderChoice1">
-                            <label class="radioBtns-label" for="genderChoice1">male</label>
-                            <input class="radioBtns-input" type="radio" name="gender" value="female" id="genderChoice2">
-                            <label class="radioBtns-label" for="genderChoice2">female</label>
-                        </div>
-                        <fieldset>
-                            <legend class="registration__form-legend">login details</legend>
-                            <div class="email-box">
-                                <label>
-                                    <input class="registration__form-input" type="email" placeholder="email" required>
-                                    <span class="visually-hidden">email</span>
-                                </label>
-                            </div>
-                            <div class="password-box">
-                                <label>
-                                    <input class="registration__form-input" type="password" placeholder="password"
-                                        required>
-                                    <span class="visually-hidden">password</span>
-                                </label>
-                            </div>
-                        </fieldset>
-                        <p class="registration__text">Please use 8 or more characters, with at least 1 number and a
-                            mixture
-                            of uppercase and lowercase
-                            letters</p>
-                        <button class="registration__button" type="submit">join now</button>
-                    </form>
-                </div>
-                <div class="loyalty">
-                    <h2 class="loyalty__heading">loyalty has its perks</h2>
-                    <p class="loyalty__text">Get in on the loyalty program where you can earn points and unlock serious
-                        perks. starting with these as soon as you join:</p>
-                    <ul class="loyalty__list">
-                        <li class="loyalty__item">15% off welcome offer</li>
-                        <li class="loyalty__item">Free shipping, returns and exchanges on all orders</li>
-                        <li class="loyalty__item">$10 off a purchase on your birthday</li>
-                        <li class="loyalty__item">Early access to products</li>
-                        <li class="loyalty__item">Exclusive offers & rewards</li>
-                    </ul>
-                </div>
-            </div>
+        <section class="arrivals">
+           <div class="arrivals__wrp">
+               <div class="arrivals__box container">
+                   <h1 class="arrivals__box-tittle">new arrivals</h1>
+                   <h2 class="arrivals__box-heading">home / men / new arrivals</h2>
+               </div>
+           </div>
+
         </section>
+
     </main>
+
     <footer>
         <section class="subscription">
             <div class="container">
@@ -228,6 +170,7 @@
         </section>
     </footer>
     <script src="js/script.js"></script>
+
 </body>
 
 </html>
