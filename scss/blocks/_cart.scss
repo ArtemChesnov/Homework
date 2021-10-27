@@ -34,7 +34,7 @@
             width: 67.2%;
 
             @include tablet {
-                width: 55.5%
+                width: 67.5%
             }
 
             @include mobile {
@@ -89,6 +89,13 @@
                 font-family: inherit;
                 text-align: center;
                 margin: 0 0 0 16px;
+
+                @include mobile {
+                    width: 24px;
+                    height: 15px;
+                    margin: 0 0 0 24px;
+                    @include font(10px,400,12px);
+                }
 
                 &:hover {
                     outline: 2px solid $outline-color;
