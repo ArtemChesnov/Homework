@@ -71,7 +71,7 @@
 
             @include mobile {
                 width: 175px;
-                left: 25%;
+                left: 18%;
             }
         }
     }
@@ -85,9 +85,13 @@
     }
 
     &__parameters-text {
-        @include font(14px, 300, 17px);
+        @include font(14px, 400, 17px);
         color: #6F6E6E;
         text-transform: uppercase;
+
+        @include mobile {
+            @include font(10px, 400, 12px);
+        }
     }
 
     &__button {

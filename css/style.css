@@ -1821,7 +1821,7 @@ table {
 @media (max-width: 767px) {
   .choice__parameters-box::before {
     width: 175px;
-    left: 25%;
+    left: 18%;
   }
 }
 .choice__parameters-list {
@@ -1832,11 +1832,19 @@ table {
 }
 .choice__parameters-text {
   font-size: 14px;
-  font-weight: 300;
+  font-weight: 400;
   line-height: 17px;
   font-style: normal;
   color: #6F6E6E;
   text-transform: uppercase;
+}
+@media (max-width: 767px) {
+  .choice__parameters-text {
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 12px;
+    font-style: normal;
+  }
 }
 .choice__button {
   background: #FFFFFF;
