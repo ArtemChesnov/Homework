@@ -1,5 +1,10 @@
 .brand {
-    display: flex;
+    background-color: $pink;
+
+    &-box {
+        max-width: 1600px;
+        display: flex;
+    }
 
     &__img {
         width: 50%;
@@ -14,7 +19,7 @@
     }
 
     &__wrp {
-        background-color: $pink;
+        display: flex;
         flex-grow: 1;
         padding: 0 0 0 92px;
         display: flex;
