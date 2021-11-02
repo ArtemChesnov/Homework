@@ -80,6 +80,18 @@
         display: flex;
     }
 
+    &__parameters-item {
+        display: flex;
+        text-align: center;
+        align-items: center;
+        flex-wrap: wrap;
+        max-width: 132px;
+    }
+
+    &__parameters-item:nth-child(3) {
+        max-width: 95px;
+    }
+
     &__parameters-item:not(:last-child) {
         margin: 0 42px 0 0;
     }
@@ -92,6 +104,60 @@
         @include mobile {
             @include font(10px, 400, 12px);
         }
+    }
+
+    &__parameters-arrow1 {
+        border: none;
+        background: transparent;
+        cursor: pointer;
+        fill: #6F6E6E;
+    }
+
+    &__parameters-arrow1:hover {
+        transform: scale(1.2);
+        fill: #EF5B70;
+    }
+
+    &__parameters-arrow2 {
+        border: none;
+        background: transparent;
+        cursor: pointer;
+        fill: #6F6E6E;
+    }
+
+    &__parameters-arrow2:hover {
+        transform: scale(1.2);
+        fill: #EF5B70;
+    }
+
+    &__parameters-arrow3 {
+        border: none;
+        background: transparent;
+        cursor: pointer;
+        fill: #6F6E6E;
+    }
+
+    &__parameters-arrow3:hover {
+        transform: scale(1.2);
+        fill: #EF5B70;
+    }
+
+    &__parameters-sublist {
+        @include font(14px, 400, 17px);
+        color: #6F6E6E;
+        width: 78%;
+        text-align: center;
+        cursor: pointer;
+        margin: 7px 0 0 0;
+    }
+
+    &__parameters-subitem {
+        margin: 0 0 5px 0;
+        text-transform: capitalize;
+    }
+
+    &__parameters-subitem:hover {
+        box-shadow: 0 0 3pt 2pt #EF5B70;
     }
 
     &__button {
@@ -133,6 +199,23 @@
             box-shadow: 5px 5px 30px 0px rgba(0, 0, 0, .6);
         }
     }
+}
+
+.sublist-size {
+    text-transform: uppercase;
+
+}
+
+.sublist-color {
+    display: none;
+}
+
+.sublist-sizes {
+    display: none;
+}
+
+.sublist-quantity {
+    display: none;
 }
 
 .products__choice-wrp {
