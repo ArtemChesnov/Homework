@@ -1,0 +1,26 @@
+.colection {
+    background: #F7F7F7;
+    position: relative;
+
+    &-box {
+        padding: 12px 0 42px 0;
+        max-width: 1600px;
+        margin: 0 auto;
+        position: relative;
+    }
+
+    &__slides-container {
+        max-width: 597px;
+        position: relative;
+        margin: auto;
+    }
+
+    &__slides {
+        display: none;
+
+        &-img {
+            width: 100%;
+            z-index: 1;
+        }
+    }
+}
