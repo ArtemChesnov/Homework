@@ -20,6 +20,7 @@
         }
 
         &-tbnt {
+            font-family: $font-lato;
             @include mobile {
                 display: none;
             }
@@ -27,6 +28,7 @@
     }
 
     &__filter-btn {
+        
         display: flex;
         align-items: center;
         text-transform: uppercase;
@@ -35,7 +37,6 @@
         cursor: pointer;
         background: transparent;
         border: none;
-
     }
 
     &__filter-btn:hover {
@@ -72,6 +73,7 @@
         }
 
         &-arrow {
+            font-family: $font-lato;
             padding: 0;
             background: transparent;
             border: none;
