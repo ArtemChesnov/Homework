@@ -174,7 +174,6 @@
         }
 
         &-item {
-
             cursor: pointer;
         }
 
@@ -200,7 +199,7 @@
         &-img:hover,
         &-img:hover {
             fill: $dark-pink;
-            transform: scale(1.3)
+            transform: scale(1.4)
         }
 
         &-img {
@@ -210,17 +209,13 @@
             cursor: pointer;
         }
     }
-
-
 }
-
 
 .cart {
     min-height: 420px;
     width: 360px;
 
     &-wrapper-overlay {
-
         position: relative;
 
         &:before {
@@ -230,7 +225,6 @@
             background: rgba(58, 56, 56, 0.86);
             position: absolute;
             top: 0;
-
         }
 
         &:before {

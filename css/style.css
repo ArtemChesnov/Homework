@@ -2170,7 +2170,7 @@ table {
 }
 .catalog__arrow-img:hover, .catalog__arrow-img:hover {
   fill: #F16D7F;
-  transform: scale(1.3);
+  transform: scale(1.4);
 }
 .catalog__arrow-img {
   width: 8px;
