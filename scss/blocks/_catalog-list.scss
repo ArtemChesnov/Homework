@@ -70,6 +70,7 @@
             @include mobile {
                 margin: 0 18px 0 0;
             }
+
         }
 
         &-arrow {
@@ -103,6 +104,10 @@
         &-img {
             padding: 0 0 0 10px;
             fill: #6F6E6E;
+        }
+
+        &-subitem{
+            display: none;
         }
     }
 
