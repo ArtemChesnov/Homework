@@ -250,9 +250,9 @@ table {
   display: inline-block;
   position: relative;
   height: 20px;
-  width: 21px;
+  width: 20px;
   box-sizing: border-box;
-  border: 2px solid #FFFFFF;
+  border: 1px solid #FFFFFF;
   border-radius: 25px;
   transition: all 200ms ease;
   cursor: text;
@@ -263,8 +263,8 @@ table {
   position: absolute;
   width: 1px;
   height: 12px;
-  right: -3px;
-  top: 14px;
+  right: -1px;
+  top: 15px;
   background: #FFFFFF;
   border-radius: 10px;
   transform: rotate(-45deg);
@@ -275,7 +275,7 @@ table {
   margin-right: 0px;
 }
 .header__search-label:active:after, .header__search-label:hover:after {
-  height: 0px;
+  height: 12px;
 }
 .header__search-input {
   width: 100%;
