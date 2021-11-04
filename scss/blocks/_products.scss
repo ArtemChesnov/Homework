@@ -48,6 +48,7 @@
     }
 
     .cart {
+        cursor: pointer;
         min-height: 420px;
         width: 360px;
 
@@ -62,7 +63,6 @@
                 background: rgba(58, 56, 56, 0.86);
                 position: absolute;
                 top: 0;
-
             }
 
             &:before {

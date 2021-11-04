@@ -88,55 +88,118 @@
             <div class="container">
                 <div class="catalog__heading-box">
                     <div class="catalog__filter">
-                        <button class="catalog__filter-btn" type="button" id=menu-button>
-                            <b class="catalog__filter-tbnt">filter</b> <svg width="15" height="10" viewBox="0 0 15 10"
-                                class="catalog__filter-img" xmlns="http://www.w3.org/2000/svg">
+                        <button class="catalog__filter-btn" type="button" id=filter-button><span
+                                class="catalog__filter-span">filter</span>
+                            <svg width="15" height="10" viewBox="0 0 15 10" class="catalog__filter-img"
+                                xmlns="http://www.w3.org/2000/svg">
                                 <path
                                     d="M0.833333 10H4.16667C4.625 10 5 9.625 5 9.16667C5 8.70833 4.625 8.33333 4.16667 8.33333H0.833333C0.375 8.33333 0 8.70833 0 9.16667C0 9.625 0.375 10 0.833333 10ZM0 0.833333C0 1.29167 0.375 1.66667 0.833333 1.66667H14.1667C14.625 1.66667 15 1.29167 15 0.833333C15 0.375 14.625 0 14.1667 0H0.833333C0.375 0 0 0.375 0 0.833333ZM0.833333 5.83333H9.16667C9.625 5.83333 10 5.45833 10 5C10 4.54167 9.625 4.16667 9.16667 4.16667H0.833333C0.375 4.16667 0 4.54167 0 5C0 5.45833 0.375 5.83333 0.833333 5.83333Z" />
                             </svg>
-                        </button></div>
+                        </button>
+                        <ul id=filter-list class="catalog__filter-list filter__list">
+                            <li class="catalog__filter-item">
+                                <h3 class="catalog__filter-heading"><a id="filter-heading" class="catalog__filter-link"
+                                        href="#">category</a>
+                                </h3>
+                                <ul id=filter-sublist class="catalog__filter-sublist">
+                                    <li class="catalog__filter-subitem"><a class="catalog__filter-sublink"
+                                            href="#">accessories</a> </li>
+                                    <li class="catalog__filter-subitem"><a class="catalog__filter-sublink"
+                                            href="#">bags</a></li>
+                                    <li class="catalog__filter-subitem"><a class="catalog__filter-sublink"
+                                            href="#">denim</a></li>
+                                    <li class="catalog__filter-subitem"><a class="catalog__filter-sublink"
+                                            href="#">hoodies & sweatshirts</a></li>
+                                    <li class="catalog__filter-subitem"><a class="catalog__filter-sublink"
+                                            href="#">jackets & coats</a></li>
+                                    <li class="catalog__filter-subitem"><a class="catalog__filter-sublink"
+                                            href="#">polos</a></li>
+                                    <li class="catalog__filter-subitem"><a class="catalog__filter-sublink"
+                                            href="#">shirts</a></li>
+                                    <li class="catalog__filter-subitem"><a class="catalog__filter-sublink"
+                                            href="#">shoes</a></li>
+                                    <li class="catalog__filter-subitem"><a class="catalog__filter-sublink"
+                                            href="#">sweaters & knits</a></li>
+                                    <li class="catalog__filter-subitem"><a class="catalog__filter-sublink"
+                                            href="#">t-shirts</a> </li>
+                                    <li class="catalog__filter-subitem"><a class="catalog__filter-sublink"
+                                            href="#">tanks</a></li>
+                                </ul>
+                            </li>
+                            <li class="catalog__filter-item">
+                                <h3 class="catalog__filter-heading"><a class="catalog__filter-link" href="#">brand</a>
+                                </h3>
+                            </li>
+                            <li class="catalog__filter-item">
+                                <h3 class="catalog__filter-heading"><a class="catalog__filter-link"
+                                        href="#">designer</a></h3>
+                            </li>
+                        </ul>
+                    </div>
                     <div class="catalog__parameters">
                         <ul class=" catalog__parameters-list">
                             <li class="catalog__parameters-item">
-                                <button type="button" id=color data-spoller class="catalog__parameters-arrow">trending
+                                <button type="button" id=now data-spoller class="catalog__parameters-arrow">trending
                                     now<svg class="catalog__parameters-img" width="11" height="6" viewBox="0 0 11 6"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <path
                                             d="M5.00214 5.64846C4.83521 5.64879 4.67343 5.59016 4.54488 5.48275L0.258102 1.88021C0.112196 1.75791 0.0204417 1.58217 0.00302325 1.39165C-0.0143952 1.20112 0.0439493 1.01143 0.165221 0.864289C0.286493 0.717149 0.460759 0.624619 0.649682 0.607053C0.838605 0.589487 1.02671 0.648325 1.17262 0.770623L5.00214 3.9985L8.83167 0.885905C8.90475 0.826055 8.98884 0.781361 9.0791 0.754391C9.16937 0.727421 9.26403 0.718707 9.35764 0.72875C9.45126 0.738794 9.54198 0.767396 9.6246 0.812913C9.70722 0.85843 9.7801 0.919965 9.83906 0.993981C9.90449 1.06806 9.95405 1.15498 9.98462 1.24927C10.0152 1.34357 10.0261 1.44321 10.0167 1.54197C10.0073 1.64073 9.97784 1.73646 9.93005 1.82318C9.88227 1.9099 9.81723 1.98573 9.73904 2.04592L5.45225 5.52598C5.32002 5.61641 5.16154 5.65954 5.00214 5.64846Z" />
                                     </svg>
                                 </button>
-                                <ul id="arrow1" class="catalog__parameters-sublist sublist-color">
-                                    <li class="catalog__parameters-subitem">white</li>
+                                <ul id="subNow" class="catalog__parameters-sublist">
+                                    <li class="catalog__parameters-subitem">what you like!</li>
                                 </ul>
                             </li>
                             <li class="catalog__parameters-item">
-                                <button type="button" id=size data-spoller class="catalog__parameters-arrow">choose
-                                    size<svg class="catalog__parameters-img" width="11" height="6" viewBox="0 0 11 6"
+                                <button type="button" id=sizes data-spoller class="catalog__parameters-arrow">size<svg
+                                        class="catalog__parameters-img" width="11" height="6" viewBox="0 0 11 6"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <path
                                             d="M5.00214 5.64846C4.83521 5.64879 4.67343 5.59016 4.54488 5.48275L0.258102 1.88021C0.112196 1.75791 0.0204417 1.58217 0.00302325 1.39165C-0.0143952 1.20112 0.0439493 1.01143 0.165221 0.864289C0.286493 0.717149 0.460759 0.624619 0.649682 0.607053C0.838605 0.589487 1.02671 0.648325 1.17262 0.770623L5.00214 3.9985L8.83167 0.885905C8.90475 0.826055 8.98884 0.781361 9.0791 0.754391C9.16937 0.727421 9.26403 0.718707 9.35764 0.72875C9.45126 0.738794 9.54198 0.767396 9.6246 0.812913C9.70722 0.85843 9.7801 0.919965 9.83906 0.993981C9.90449 1.06806 9.95405 1.15498 9.98462 1.24927C10.0152 1.34357 10.0261 1.44321 10.0167 1.54197C10.0073 1.64073 9.97784 1.73646 9.93005 1.82318C9.88227 1.9099 9.81723 1.98573 9.73904 2.04592L5.45225 5.52598C5.32002 5.61641 5.16154 5.65954 5.00214 5.64846Z" />
                                     </svg>
                                 </button>
-                                <ul id=arrow2 class="catalog__parameters-sublist sublist-sizes">
-                                    <li class="catalog__parameters-subitem sublist-size">s</li>
-                                    <li class="catalog__parameters-subitem sublist-size">m</li>
-                                    <li class="catalog__parameters-subitem sublist-size">l</li>
-                                    <li class="catalog__parameters-subitem sublist-size">xl</li>
-                                    <li class="catalog__parameters-subitem sublist-size">xxl</li>
-                                    <li class="catalog__parameters-subitem sublist-size">xxxl</li>
+                                <ul id=subSize class="catalog__parameters-sublist">
+                                    <li class="catalog__parameters-subitem">
+                                        <input class="catalog__parameters-checkbox" id="size-s" type="radio"
+                                            name="radio" value="1" checked>
+                                        <label for="size-s">s</label>
+                                    </li>
+                                    <li class="catalog__parameters-subitem">
+                                        <input class="catalog__parameters-checkbox" id="size-m" type="radio"
+                                            name="radio" value="1" checked>
+                                        <label for="size-m">m</label>
+                                    </li>
+                                    <li class="catalog__parameters-subitem">
+                                        <input class="catalog__parameters-checkbox" id="size-l" type="radio"
+                                            name="radio" value="1" checked>
+                                        <label for="size-l">l</label>
+                                    </li>
+                                    <li class="catalog__parameters-subitem">
+                                        <input class="catalog__parameters-checkbox" id="size-xl" type="radio"
+                                            name="radio" value="1" checked>
+                                        <label for="size-xl">xl</label></li>
+                                    <li class="catalog__parameters-subitem">
+                                        <input class="catalog__parameters-checkbox" id="size-xxl" type="radio"
+                                            name="radio" value="1" checked>
+                                        <label for="size-xxl">xxl</label>
+                                    </li>
+                                    <li class="catalog__parameters-subitem">
+                                        <input class="catalog__parameters-checkbox" id="size-xxxl" type="radio"
+                                            name="radio" value="1" checked>
+                                        <label for="size-xxxl">xxxl</label>
+                                    </li>
                                 </ul>
                             </li>
                             <li class="catalog__parameters-item">
-
-                                <button type="button" id=quantity data-spoller
-                                    class="catalog__parameters-arrow">price<svg class="catalog__parameters-img"
-                                        width="11" height="6" viewBox="0 0 11 6" xmlns="http://www.w3.org/2000/svg">
+                                <button type="button" id=price data-spoller class="catalog__parameters-arrow">price<svg
+                                        class="catalog__parameters-img" width="11" height="6" viewBox="0 0 11 6"
+                                        xmlns="http://www.w3.org/2000/svg">
                                         <path
                                             d="M5.00214 5.64846C4.83521 5.64879 4.67343 5.59016 4.54488 5.48275L0.258102 1.88021C0.112196 1.75791 0.0204417 1.58217 0.00302325 1.39165C-0.0143952 1.20112 0.0439493 1.01143 0.165221 0.864289C0.286493 0.717149 0.460759 0.624619 0.649682 0.607053C0.838605 0.589487 1.02671 0.648325 1.17262 0.770623L5.00214 3.9985L8.83167 0.885905C8.90475 0.826055 8.98884 0.781361 9.0791 0.754391C9.16937 0.727421 9.26403 0.718707 9.35764 0.72875C9.45126 0.738794 9.54198 0.767396 9.6246 0.812913C9.70722 0.85843 9.7801 0.919965 9.83906 0.993981C9.90449 1.06806 9.95405 1.15498 9.98462 1.24927C10.0152 1.34357 10.0261 1.44321 10.0167 1.54197C10.0073 1.64073 9.97784 1.73646 9.93005 1.82318C9.88227 1.9099 9.81723 1.98573 9.73904 2.04592L5.45225 5.52598C5.32002 5.61641 5.16154 5.65954 5.00214 5.64846Z" />
                                     </svg>
                                 </button>
-                                <ul id=arrow3 class="catalog__parameters-sublist sublist-quantity">
-                                    <li class="catalog__parameters-subitem">1</li>
+                                <ul id=subPrice class="catalog__parameters-sublist">
+                                    <li class="catalog__parameters-subitem">free</li>
                                 </ul>
                             </li>
                         </ul>
@@ -292,12 +355,12 @@
                 <div class="catalog__nav">
                     <div class="catalog__nav-box">
                         <div class="catalog__arrow">
-                            <a class="catalog__arrow-left" onclick="plusSlides(-1)"><svg class="catalog__arrow-img"
+                            <button class="catalog__arrow-left" onclick="plusSlides(-1)"><svg class="catalog__arrow-img"
                                     viewBox="0 0 9 14" xmlns="http://www.w3.org/2000/svg">
                                     <path
                                         d="M8.99512 2L3.99512 7L8.99512 12L7.99512 14L0.995117 7L7.99512 0L8.99512 2Z" />
-                                    </svg>
-                            </a>
+                                </svg>
+                            </button>
                             <ul class="catalog__nav-list">
                                 <li class="catalog__nav-item"><a class="catalog__nav-link" href="#">1</a></li>
                                 <li class="catalog__nav-item"><a class="catalog__nav-link" href="#">2</a></li>
@@ -308,11 +371,11 @@
                                 <li class="catalog__nav-item"><a class="catalog__nav-link" href="#">...</a></li>
                                 <li class="catalog__nav-item"><a class="catalog__nav-link" href="#">20</a></li>
                             </ul>
-                            <a class="catalog__arrow-right" onclick="plusSlides(1)"><svg class="catalog__arrow-img"
+                            <button class="catalog__arrow-right" onclick="plusSlides(1)"><svg class="catalog__arrow-img"
                                     viewBox="0 0 9 14" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M0.994995 12L5.995 7L0.994995 2L1.995 0L8.995 7L1.995 14L0.994995 12Z" />
                                 </svg>
-                            </a>
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -401,6 +464,8 @@
         </section>
     </footer>
     <script src="js/script.js"></script>
+    <script src="js/sub-list.js"></script>
+    <script src="js/filter-list.js"></script>
 
 </body>
 

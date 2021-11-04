@@ -1,34 +1,5 @@
 .choice {
-    .sublist-size {
-        text-transform: uppercase;
-    }
 
-    .sublist-color {
-        display: none;
-        position: absolute;
-    }
-
-    .sublist-sizes {
-        position: absolute;
-        display: none;
-    }
-
-    .sublist-quantity {
-        position: absolute;
-        display: none;
-    }
-
-    .display-block1 {
-        display: block;
-    }
-
-    .display-block2 {
-        display: block;
-    }
-
-    .display-block3 {
-        display: block;
-    }
 
     &-box {
         border: 1px solid #EAEAEA;
@@ -108,7 +79,6 @@
 
     &__parameters-list {
         display: flex;
-
     }
 
     &__parameters-item {
@@ -117,11 +87,6 @@
         text-align: center;
         align-items: center;
         flex-wrap: wrap;
-        max-width: 132px;
-    }
-
-    &__parameters-item:nth-child(3) {
-        max-width: 95px;
     }
 
     &__parameters-item:not(:last-child) {
@@ -138,43 +103,37 @@
         }
     }
 
-    &__parameters-arrow1 {
+    &__parameters-arrow {
+        @include font(14px, 400, 17px);
+        color: #6F6E6E;
         border: none;
         background: transparent;
         cursor: pointer;
         fill: #6F6E6E;
+        transition: 0.25s;
+        text-transform: uppercase;
+
+        @include mobile {
+            @include font(10px, 400, 12px);
+        }
     }
 
-    &__parameters-arrow1:hover {
-        transform: scale(1.2);
+    &__parameters-arrow:focus,
+    &__parameters-arrow:hover {
+        outline: none;
+        color: $dark-pink;
         fill: #EF5B70;
-    }
-
-    &__parameters-arrow2 {
-        border: none;
-        background: transparent;
-        cursor: pointer;
-        fill: #6F6E6E;
-    }
-
-    &__parameters-arrow2:hover {
         transform: scale(1.2);
-        fill: #EF5B70;
     }
 
-    &__parameters-arrow3 {
-        border: none;
-        background: transparent;
-        cursor: pointer;
-        fill: #6F6E6E;
-    }
-
-    &__parameters-arrow3:hover {
-        transform: scale(1.2);
-        fill: #EF5B70;
+    &__parameters-img {
+        margin: 0 0 0 9px;
     }
 
     &__parameters-sublist {
+        border-radius: 5px;
+        display: none;
+        position: absolute;
         @include font(14px, 400, 17px);
         color: #6F6E6E;
         width: 78%;
@@ -183,15 +142,18 @@
         margin: 7px 0 0 0;
         top: 20px;
         box-shadow: 10px 15px 20px rgba(0, 0, 0, 0.09);
+        background-color: $just-white;
+        z-index: 1;
     }
 
     &__parameters-subitem {
         margin: 0 0 5px 0;
-        text-transform: capitalize;
+        text-transform: uppercase;
+
     }
 
     &__parameters-subitem:hover {
-        box-shadow: 0 0 3pt 2pt #EF5B70;
+        box-shadow: 1pt 1pt 3pt 0 #EF5B70;
     }
 
     &__button {
@@ -203,7 +165,7 @@
         outline: 1px solid #FF6A6A;
         color: #FF6A6A;
         background: $just-white;
-        margin: 150px 0 65px 0;
+        margin: 50px 0 65px 0;
         padding: 14px 56px 14px 73px;
         cursor: pointer;
         transition: 0.25s;
@@ -235,7 +197,9 @@
     }
 }
 
-
+.display-block {
+    display: block;
+}
 
 .products__choice-wrp {
     margin: 665px 0 128px 0;

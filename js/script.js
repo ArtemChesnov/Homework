@@ -45,7 +45,7 @@ let arrowColor = document.getElementById('color');
 let navi = document.getElementById('arrow1');
 
 arrowColor.addEventListener('click', function () {
-    navi.classList.toggle('display-block1');
+    navi.classList.toggle('display-block');
 });
 
 
@@ -55,7 +55,7 @@ let arrowSize = document.getElementById('size');
 let navig = document.getElementById('arrow2');
 
 arrowSize.addEventListener('click', function () {
-    navig.classList.toggle('display-block2');
+    navig.classList.toggle('display-block');
 });
 
 
@@ -64,5 +64,5 @@ let arrowQuantity = document.getElementById('quantity');
 let naviga = document.getElementById('arrow3');
 
 arrowQuantity.addEventListener('click', function () {
-    naviga.classList.toggle('display-block3');
+    naviga.classList.toggle('display-block');
 });
