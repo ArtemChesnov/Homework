@@ -7,7 +7,6 @@ arrowNow.addEventListener('click', function () {
 });
 
 
-
 let arrowSizes = document.getElementById('sizes');
 
 let navigationSizes = document.getElementById('subSize');
