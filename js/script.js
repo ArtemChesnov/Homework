@@ -40,12 +40,12 @@ function showSlides(n) {
 
 
 
-let arrowColor = document.getElementById('arrow1');
+let arrowColor = document.getElementById('color');
 
-let navi = document.getElementById('color');
+let navi = document.getElementById('arrow1');
 
 arrowColor.addEventListener('click', function () {
-    navi.classList.toggle('display-block');
+    navi.classList.toggle('display-block1');
 });
 
 
@@ -55,14 +55,14 @@ let arrowSize = document.getElementById('size');
 let navig = document.getElementById('arrow2');
 
 arrowSize.addEventListener('click', function () {
-    navig.classList.toggle('display-block');
+    navig.classList.toggle('display-block2');
 });
 
 
-let arrowQuantity = document.getElementById('arrow3');
+let arrowQuantity = document.getElementById('quantity');
 
-let naviga = document.getElementById('quantity');
+let naviga = document.getElementById('arrow3');
 
 arrowQuantity.addEventListener('click', function () {
-    naviga.classList.toggle('display-block');
+    naviga.classList.toggle('display-block3');
 });
