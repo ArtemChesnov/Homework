@@ -3,7 +3,7 @@
         background: $pink-white;
     }
 
-    &__tittle {
+    &__title {
         @include font(24px, 400, 29px);
         color: $dark-pink;
         text-transform: uppercase;
@@ -105,7 +105,7 @@
     }
 
     &__button {
-        @include font(default);
+        @include font(14px, 400, 17px);
         color: $just-white;
         background: $dark-pink;
         margin: 39px 0 0 0;

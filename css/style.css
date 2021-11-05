@@ -862,7 +862,7 @@ table {
 }
 @media (max-width: 1599px) {
   .subscription__img {
-    padding: 54 0 32px 0;
+    padding: 54px 0 32px 0;
   }
 }
 .subscription__text {
@@ -1022,7 +1022,7 @@ table {
 .registration__wrp {
   background: #F8F3F4;
 }
-.registration__tittle {
+.registration__title {
   font-size: 24px;
   font-weight: 400;
   line-height: 29px;
@@ -1032,7 +1032,7 @@ table {
   padding: 60px 0 60px 0;
 }
 @media (max-width: 767px) {
-  .registration__tittle {
+  .registration__title {
     text-align: center;
   }
 }
@@ -1129,7 +1129,7 @@ table {
   margin: 15px 0 0 0;
 }
 .registration__button {
-  font-size: default;
+  font-size: 14px;
   font-weight: 400;
   line-height: 17px;
   font-style: normal;
@@ -2068,6 +2068,8 @@ table {
   margin: 0 0 11px 0;
 }
 .catalog__filter-heading {
+  width: 100%;
+  height: 100%;
   display: inline-block;
   text-transform: uppercase;
   font-size: 14px;
@@ -2091,7 +2093,7 @@ table {
 }
 .catalog__filter-heading::after {
   content: " ";
-  width: 327px;
+  width: 310px;
   height: 1px;
   background-color: #EBEBEB;
   position: absolute;
@@ -2099,7 +2101,7 @@ table {
   top: 26px;
 }
 .catalog__filter-heading:hover {
-  transform: scale(1.1);
+  transform: scale(1.05);
 }
 .catalog__filter-heading:hover, .catalog__filter-heading:focus {
   color: #EF5B70;
