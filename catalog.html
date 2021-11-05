@@ -14,7 +14,11 @@
         <div class="container header__wrp">
             <div class="header__wrp-logs">
                 <img class="header__logo" src="img/logo.svg" alt="logo">
-                <img class="header__search" src="img/loupe.svg" alt="search">
+                <div class="header__search">
+                    <label class="header__search-label" for="input_search">
+                        <input class="header__search-input" id="input_search" type="text" />
+                    </label>
+                </div>
             </div>
             <div class="header__wrp-link">
                 <button class="header__menu-btn" type="button" id=menu-btn><svg class="btn-icon" width="32" height="23"
@@ -98,10 +102,8 @@
                         </button>
                         <ul id=filter-list class="catalog__filter-list filter__list">
                             <li class="catalog__filter-item">
-                                <h3 class="catalog__filter-heading"><a id="filter-heading" class="catalog__filter-link"
-                                        href="#">category</a>
-                                </h3>
-                                <ul id=filter-sublist class="catalog__filter-sublist">
+                                <h3 class="catalog__filter-heading" id="category">category</h3>
+                                <ul id=category-sublist class="catalog__filter-sublist">
                                     <li class="catalog__filter-subitem"><a class="catalog__filter-sublink"
                                             href="#">accessories</a> </li>
                                     <li class="catalog__filter-subitem"><a class="catalog__filter-sublink"
@@ -127,12 +129,59 @@
                                 </ul>
                             </li>
                             <li class="catalog__filter-item">
-                                <h3 class="catalog__filter-heading"><a class="catalog__filter-link" href="#">brand</a>
-                                </h3>
+                                <h3 class="catalog__filter-heading" id="brand">brand</h3>
+                                <ul id=brand-sublist class="catalog__filter-sublist">
+                                    <li class="catalog__filter-subitem"><a class="catalog__filter-sublink"
+                                            href="#">guess</a> </li>
+                                    <li class="catalog__filter-subitem"><a class="catalog__filter-sublink"
+                                            href="#">prada</a></li>
+                                    <li class="catalog__filter-subitem"><a class="catalog__filter-sublink"
+                                            href="#">gucci</a></li>
+                                    <li class="catalog__filter-subitem"><a class="catalog__filter-sublink"
+                                            href="#">valentino</a></li>
+                                    <li class="catalog__filter-subitem"><a class="catalog__filter-sublink"
+                                            href="#">versache</a></li>
+                                    <li class="catalog__filter-subitem"><a class="catalog__filter-sublink"
+                                            href="#">Dunhill</a></li>
+                                    <li class="catalog__filter-subitem"><a class="catalog__filter-sublink"
+                                            href="#">Alexander McQueen</a></li>
+                                    <li class="catalog__filter-subitem"><a class="catalog__filter-sublink"
+                                            href="#">Chanel</a></li>
+                                    <li class="catalog__filter-subitem"><a class="catalog__filter-sublink"
+                                            href="#">Christian Dior</a></li>
+                                    <li class="catalog__filter-subitem"><a class="catalog__filter-sublink"
+                                            href="#">Salvatore Ferragamo</a> </li>
+                                    <li class="catalog__filter-subitem"><a class="catalog__filter-sublink"
+                                            href="#">bolshevichka</a></li>
+                                </ul>
                             </li>
                             <li class="catalog__filter-item">
-                                <h3 class="catalog__filter-heading"><a class="catalog__filter-link"
-                                        href="#">designer</a></h3>
+                                <h3 class="catalog__filter-heading" id="designer">designer</h3>
+                                <ul id=designer-sublist class="catalog__filter-sublist">
+                                    <li class="catalog__filter-subitem"><a class="catalog__filter-sublink"
+                                            href="#">Christian
+                                            Dior</a> </li>
+                                    <li class="catalog__filter-subitem"><a class="catalog__filter-sublink"
+                                            href="#">Ralph
+                                            Lauren</a></li>
+                                    <li class="catalog__filter-subitem"><a class="catalog__filter-sublink"
+                                            href="#">Giorgio
+                                            Armani</a></li>
+                                    <li class="catalog__filter-subitem"><a class="catalog__filter-sublink"
+                                            href="#">Roberto
+                                            Cavalli</a></li>
+                                    <li class="catalog__filter-subitem"><a class="catalog__filter-sublink" href="#">Yves
+                                            Saint-Laurent</a></li>
+                                    <li class="catalog__filter-subitem"><a class="catalog__filter-sublink"
+                                            href="#">Gianni
+                                            Versace</a></li>
+                                    <li class="catalog__filter-subitem"><a class="catalog__filter-sublink" href="#">Nina
+                                            Ricci</a></li>
+                                    <li class="catalog__filter-subitem"><a class="catalog__filter-sublink" href="#">John
+                                            Galliano</a></li>
+                                    <li class="catalog__filter-subitem"><a class="catalog__filter-sublink" href="#">
+                                            Charles Frederick Worth</a></li>
+                                </ul>
                             </li>
                         </ul>
                     </div>
@@ -199,7 +248,7 @@
                                     </svg>
                                 </button>
                                 <ul id=subPrice class="catalog__parameters-sublist">
-                                    <li class="catalog__parameters-subitem">free</li>
+                                    <li class="catalog__parameters-subitem">everything is free!</li>
                                 </ul>
                             </li>
                         </ul>
